@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.1352077363896848, 0.8321991404011461" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="800.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="s2105064.client.controller.FoodCartRestaurantController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #237cdb;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="135.0" layoutY="19.0" prefHeight="66.0" prefWidth="642.0" text="Order Placed by Customers" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <TableView fx:id="datatableshow" layoutX="349.0" layoutY="104.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="foodname" prefWidth="256.5713893175125" text="Food Name" />
+                <TableColumn fx:id="category" prefWidth="261.7142333984375" text="Food Category" />
+                  <TableColumn fx:id="price" prefWidth="82.28570556640625" text="Price" />
+                  <TableColumn fx:id="customername" prefWidth="203.4285888671875" text="Customer Name" />
+                  <TableColumn fx:id="quantity" prefWidth="92.5714111328125" text="Quantity" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #237cdb;">
+         <children>
+            <Button layoutX="385.0" layoutY="38.0" mnemonicParsing="false" onAction="#goBack" prefHeight="55.0" prefWidth="127.0" style="-fx-background-color: #fe9677; -fx-background-radius: 30;" text="Back">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+  </items>
+</SplitPane>

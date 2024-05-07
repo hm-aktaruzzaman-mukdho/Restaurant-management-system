@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="899.0" style="-fx-background-color: #237cdb;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="s2105064.client.controller.RestaurantLoginController">
+   <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="209.0" layoutY="28.0" text="Restaurant Login Page" textFill="WHITE" underline="true" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+      <font>
+         <Font name="System Bold" size="36.0" />
+      </font>
+   </Label>
+   <Label layoutX="113.0" layoutY="300.0" text="Restaurant Name :" textFill="#fbdbdb" AnchorPane.leftAnchor="113.0" AnchorPane.topAnchor="300.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="113.0" layoutY="350.0" text=" Password             :" textFill="#fbdbdb" AnchorPane.leftAnchor="113.0" AnchorPane.topAnchor="350.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <TextField fx:id="restaurantidfield" layoutX="338.0" layoutY="301.0" prefHeight="25.0" prefWidth="211.0" promptText="Enter Your Unique Restaurant Name" style="-fx-background-color: #b1c9e6; -fx-background-radius: 30;" />
+   <PasswordField fx:id="passwordfield" layoutX="338.0" layoutY="351.0" prefHeight="25.0" prefWidth="211.0" promptText="Enter Your RestaurantID as Password" style="-fx-background-color: #b1c9e6; -fx-background-radius: 30;" />
+   <Button fx:id="loginrestaurant" layoutX="232.0" layoutY="460.0" mnemonicParsing="false" onAction="#logInRestaurant" prefHeight="31.0" prefWidth="105.0" style="-fx-background-color: #edb4e7; -fx-background-radius: 30;" text="Log In" />
+   <Button layoutX="433.0" layoutY="460.0" mnemonicParsing="false" onAction="#resetInput" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: #edb4e7; -fx-background-radius: 30;" text="Reset" />
+   <Label fx:id="loginmessage" alignment="CENTER" contentDisplay="CENTER" layoutX="203.0" layoutY="411.0" prefHeight="17.0" prefWidth="458.0" textFill="#ffee00">
+      <font>
+         <Font size="18.0" />
+      </font></Label>
+   <Button layoutX="340.0" layoutY="538.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #edb4e7; -fx-background-radius: 30;" text="Back" />
+</AnchorPane>

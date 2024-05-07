@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.1352077363896848, 0.852256446991404" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="800.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="s2105064.client.controller.FoodCartCustomerController">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #237cdb;">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="135.0" layoutY="19.0" prefHeight="66.0" prefWidth="642.0" text="Food You Have Selected For Order" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            <children>
+                <TableView fx:id="datatableshow" layoutX="349.0" layoutY="104.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                  <TableColumn fx:id="restaurantid" prefWidth="125.14287674427032" text="Restaurant Name" />
+                        <TableColumn fx:id="foodname" prefWidth="239.42857360839844" text="Food Name" />
+                        <TableColumn fx:id="category" prefWidth="189.71417236328125" text="Food Category" />
+                  <TableColumn fx:id="price" prefWidth="65.71429443359375" resizable="false" text="Price" />
+                        <TableColumn fx:id="totalitemprice" prefWidth="101.14288330078125" resizable="false" text="Total Item Price" />
+                        <TableColumn fx:id="quantity" prefWidth="82.2857666015625" resizable="false" text="Quantity" />
+                  <TableColumn fx:id="deletebutton" prefWidth="94.28564453125" resizable="false" text="Action" />
+                    </columns>
+                </TableView>
+            </children></AnchorPane>
+        <AnchorPane prefHeight="106.0" prefWidth="598.0" style="-fx-background-color: #237cdb;">
+            <children>
+                <Button layoutX="14.0" layoutY="32.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #edb4e7; -fx-background-radius: 40;" text="Back">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button layoutX="719.0" layoutY="18.0" mnemonicParsing="false" onAction="#placeOrder" style="-fx-background-color: #edb4e7; -fx-background-radius: 40;" text="Place Order">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Label fx:id="orderstatus" alignment="CENTER" contentDisplay="CENTER" layoutX="292.0" layoutY="44.0" prefHeight="27.0" prefWidth="181.0" textAlignment="CENTER" textFill="RED">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            <Button layoutX="118.0" layoutY="32.0" mnemonicParsing="false" onAction="#clearcart" style="-fx-background-color: #edb4e7; -fx-background-radius: 40;" text="Clear Cart">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Label fx:id="totalcount" layoutX="510.0" layoutY="26.0" text="Total:" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="cartcost" layoutX="510.0" layoutY="69.0" text="Cart Cost :" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </items>
+</SplitPane>

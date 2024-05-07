@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="900.0" style="-fx-background-color: #237cdb;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="s2105064.client.controller.CustomerLoginController">
+   <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="209.0" layoutY="28.0" text="Customer Login Page" textFill="#dcfff7" underline="true" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+      <font>
+         <Font name="System Bold" size="36.0" />
+      </font>
+   </Label>
+   <Label layoutX="133.0" layoutY="187.0" text="Customer ID  :" textFill="WHITE" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="300.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="165.0" layoutY="259.0" text=" Password      :" textFill="WHITE" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="350.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <PasswordField fx:id="passwordfield" layoutX="338.0" layoutY="351.0" prefHeight="25.0" prefWidth="283.0" promptText="Enter Your Password" style="-fx-background-color: #b1c9e6; -fx-background-radius: 25;" />
+   <Button fx:id="logincustomer" layoutX="168.0" layoutY="460.0" mnemonicParsing="false" onAction="#logInCustomer" prefHeight="31.0" prefWidth="105.0" style="-fx-background-color: #edb4e7; -fx-background-radius: 25;" text="Log In">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Button>
+   <Button layoutX="610.0" layoutY="460.0" mnemonicParsing="false" onAction="#resetInput" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: #edb4e7; -fx-background-radius: 25;" text="Reset">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Button>
+   <Label fx:id="loginmessage" layoutX="235.0" layoutY="418.0" prefHeight="27.0" prefWidth="423.0" textAlignment="CENTER" textFill="#ffe500">
+      <font>
+         <Font size="18.0" />
+      </font></Label>
+   <Button fx:id="loginasguest" layoutX="591.0" layoutY="595.0" mnemonicParsing="false" onAction="#loginAsGuest" prefHeight="31.0" prefWidth="125.0" style="-fx-background-color: #edb4e7; -fx-background-radius: 25;" text="Login as Guest" visible="false">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Button>
+   <TextField fx:id="customerid" layoutX="338.0" layoutY="301.0" prefHeight="25.0" prefWidth="283.0" promptText="Enter Your Customer ID" style="-fx-background-color: #b1c9e6; -fx-background-radius: 25;" />
+   <Button alignment="CENTER" contentDisplay="CENTER" layoutX="409.0" layoutY="460.0" mnemonicParsing="false" onAction="#goBack" prefHeight="29.0" prefWidth="75.0" style="-fx-background-color: #edb4e7; -fx-background-radius: 25;" text="Back">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Button>
+</AnchorPane>
